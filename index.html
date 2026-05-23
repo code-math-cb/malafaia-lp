@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>izicompra | Hortifruti para Restaurantes em Tamandaré</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        izigreen: {
+                            light: '#4ade80',
+                            DEFAULT: '#16a34a',
+                            dark: '#15803d',
+                        },
+                        izicyan: {
+                            light: '#ecfeff',
+                            DEFAULT: '#cffafe',
+                            dark: '#0891b2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #ecfeff;
+            background-image: radial-gradient(#16a34a 0.5px, transparent 0.5px), radial-gradient(#16a34a 0.5px, #ecfeff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            background-opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5581997088441?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20hortifruti%20para%20o%20meu%20restaurante%20em%20Tamandar%C3%A9." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-transform transform hover:scale-110 z-50 flex items-center justify-center text-3xl h-16 w-16">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-leaf text-izigreen text-3xl"></i>
+                <span class="font-bold text-2xl text-izigreen-dark tracking-tight">izi<span class="text-izicyan-dark">compra</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#inicio" class="hover:text-izigreen transition-colors">Início</a>
+                <a href="#diferenciais" class="hover:text-izigreen transition-colors">Vantagens</a>
+                <a href="#historia" class="hover:text-izigreen transition-colors">Nossa História</a>
+            </nav>
+            <a href="https://wa.me/5581997088441" target="_blank" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-izigreen hover:bg-izigreen-dark shadow-md transition-colors">
+                <i class="fab fa-whatsapp mr-2 text-lg"></i> Fazer Pedido
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-izicyan-light py-20 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12">
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-izicyan text-izicyan-dark font-semibold text-sm mb-4 border border-izicyan-dark/20">
+                    Atendimento Exclusivo para Tamandaré - PE
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    Hortifruti Fresco, Direto para o seu <span class="text-izigreen">Restaurante</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    A <strong>izicompra</strong> simplifica o abastecimento da sua cozinha. Frutas, legumes e verduras selecionados com qualidade premium e entrega ágil para o seu negócio não parar.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/5581997088441" target="_blank" class="px-8 py-4 text-lg font-bold rounded-full text-white bg-izigreen hover:bg-izigreen-dark shadow-lg hover:shadow-xl transition-all flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Pedir pelo WhatsApp
+                    </a>
+                    <a href="https://izicompra.com.br/" target="_blank" class="px-8 py-4 text-lg font-bold rounded-full text-izigreen-dark bg-white border-2 border-izigreen hover:bg-izicyan-light transition-all flex items-center justify-center">
+                        Conhecer a izicompra
+                    </a>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 relative">
+                <!-- Imagem ilustrativa de Hortifruti -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="foto/fruta.png" alt="Caixas com vegetais frescos" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white font-bold text-xl">
+                        <i class="fas fa-check-circle text-izigreen-light mr-2"></i> Qualidade Selecionada
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Por que escolher a izicompra?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nós entendemos a rotina corrida de uma cozinha profissional e garantimos que os melhores ingredientes cheguem até você sem dor de cabeça.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Item 1 -->
+                <div class="bg-izicyan-light rounded-2xl p-8 text-center border border-izicyan hover:shadow-lg transition-shadow">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <i class="fas fa-carrot text-2xl text-izigreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Frescor Garantido</h3>
+                    <p class="text-gray-600">Selecionamos a dedo cada fruta, legume e hortaliça para garantir durabilidade e o melhor sabor para os seus pratos.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-izicyan-light rounded-2xl p-8 text-center border border-izicyan hover:shadow-lg transition-shadow">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <i class="fas fa-truck-fast text-2xl text-izigreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Entrega Local</h3>
+                    <p class="text-gray-600">Somos especialistas em Tamandaré. Conhecemos a região e entregamos o seu pedido com a rapidez que o seu restaurante exige.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-izicyan-light rounded-2xl p-8 text-center border border-izicyan hover:shadow-lg transition-shadow">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <i class="fas fa-mobile-screen-button text-2xl text-izigreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Pedido Fácil</h3>
+                    <p class="text-gray-600">Nada de sistemas complexos. Mandou mensagem no WhatsApp, pediu, chegou. Atendimento humanizado e prático.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História (Francisco Malafaia) -->
+    <section id="historia" class="py-20 bg-izicyan-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Área da Foto do Dono -->
+                    <div class="w-full lg:w-5/12 bg-gray-100 relative">
+                        <!-- NOTA PARA O USUÁRIO: 
+                             Substitua o link do "src" abaixo pelo link da foto colorida do Francisco Malafaia.
+                             Usei um placeholder genérico aqui para manter o layout bonito enquanto você não sobe a imagem no seu servidor. -->
+                        <img src="foto/dono mala.jpg" 
+                             alt="Francisco Malafaia - Fundador da izicompra" 
+                             class="w-full h-full object-cover min-h-[400px]">
+                        
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 pt-20 text-white">
+                            <h3 class="text-2xl font-bold">Francisco Malafaia</h3>
+                            <p class="text-izicyan-light font-medium">Fundador da izicompra</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Área de Texto da História -->
+                    <div class="w-full lg:w-7/12 p-10 lg:p-16 flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 mb-4">
+                            <span class="w-8 h-1 bg-izigreen rounded-full"></span>
+                            <span class="text-izigreen-dark font-bold uppercase tracking-wider text-sm">Nossas Raízes</span>
+                        </div>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">A História por trás da <span class="text-izigreen">izicompra</span></h2>
+                        
+                        <div class="space-y-4 text-gray-600 text-lg leading-relaxed">
+                            <p>
+                                A <strong>izicompra</strong> nasceu do espírito empreendedor de <strong>Francisco Malafaia</strong>, um apaixonado por qualidade e eficiência. Observando o constante crescimento do polo gastronômico de Tamandaré, Francisco percebeu um desafio em comum entre os chefs e donos de restaurantes locais: a dificuldade de encontrar fornecedores de hortifruti que aliassem frescor impecável, regularidade e agilidade na entrega.
+                            </p>
+                            <p>
+                                Foi com o propósito de resolver essa dor que a izicompra foi idealizada. Mais do que uma simples fornecedora, a empresa foi construída para ser a <em>parceira estratégica</em> das cozinhas de Tamandaré.
+                            </p>
+                            <p>
+                                Hoje, através de um atendimento direto e humanizado pelo WhatsApp, Francisco e a equipe da izicompra garantem que os melhores produtos da terra cheguem às mesas dos clientes, sempre com um sorriso no rosto e o compromisso de facilitar o dia a dia de quem faz a gastronomia da nossa região acontecer.
+                            </p>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <p class="text-gray-900 font-bold mb-3">Fale diretamente com nossa equipe:</p>
+                            <a href="https://wa.me/5581997088441" target="_blank" class="inline-flex items-center px-6 py-3 bg-white border-2 border-gray-200 hover:border-izigreen text-gray-800 font-semibold rounded-xl hover:shadow-md transition-all group">
+                                <i class="fab fa-whatsapp text-green-500 text-2xl mr-3 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-xl">(81) 99708-8441</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Final (CTA) -->
+    <section class="bg-izigreen py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="leaf" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M20 5c-8 0-15 7-15 15 0 8 15 15 15 15s15-7 15-15c0-8-7-15-15-15z" fill="white"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#leaf)"/>
+            </svg>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Pronto para abastecer seu restaurante com o melhor?</h2>
+            <p class="text-izicyan-light text-lg mb-10 max-w-2xl mx-auto">Faça um teste conosco. Envie sua lista de compras agora pelo WhatsApp e receba um orçamento sem compromisso.</p>
+            <a href="https://wa.me/5581997088441" target="_blank" class="inline-block px-10 py-5 bg-white text-izigreen-dark font-bold text-xl rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+                <i class="fab fa-whatsapp mr-2 text-green-500"></i> Enviar Lista no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fas fa-leaf text-izigreen text-2xl"></i>
+                    <span class="font-bold text-xl text-white tracking-tight">izi<span class="text-izicyan-dark">compra</span></span>
+                </div>
+                <p class="text-sm text-gray-400 mb-4">O melhor hortifruti para o setor gastronômico de Tamandaré - PE.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contato</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><i class="fab fa-whatsapp mr-2 text-izigreen"></i> (81) 99708-8441</li>
+                    <li><i class="fas fa-map-marker-alt mr-2 text-izigreen"></i> Tamandaré, PE</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Links Rápidos</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#inicio" class="hover:text-izigreen transition-colors">Início</a></li>
+                    <li><a href="#diferenciais" class="hover:text-izigreen transition-colors">Diferenciais</a></li>
+                    <li><a href="#historia" class="hover:text-izigreen transition-colors">História</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm text-center text-gray-500">
+            <p>&copy; 2026 izicompra. Todos os direitos reservados expresso landing.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
